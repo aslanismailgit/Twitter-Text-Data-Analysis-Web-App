@@ -1,0 +1,204 @@
+{% extends 'base.html' %}
+{% block title %}
+TWAN
+{% endblock %}
+
+{% block content %}
+<br>
+
+<div class="container">
+    <div class="card text-center bg-dark" style="font-size:x-large; ">
+        <div class=" card-header">
+            <h1> Twitter Data Analysis </h1>
+        </div>
+        <div class="card-body">
+            <h3 class="card-title">Artificial Intelligence Based Analysis</h3>
+            <p class="card-text">Using Natural Language Processing Techniques</p>
+            <a href="{{ url_for('search_page') }}" class="btn btn-primary btn-lg btn-dark">Start</a>
+        </div>
+    </div>
+</div>
+<br>
+
+
+<div class="container" style="font-size:x-large;">
+    <div class="card-deck">
+
+        <div class="card text-center bg-dark" style="font-size:x-large;  align-items: center;">
+            <i class="bi bi-search" style="font-size: 5rem; color: cornflowerblue;"></i>
+            <div class="card-body">
+                <p class="card-text">Collect tweets based on key words, language and date</p>
+                <a href="{{ url_for('search_page') }}" class="btn btn-primary btn-lg btn-dark">Start Search</a>
+            </div>
+
+        </div>
+        <div class="card text-center bg-dark" style="font-size:x-large;  align-items: center;">
+            <i class="bi bi-graph-up" style="font-size: 5rem; color: cornflowerblue;"></i>
+            <div class="card-body">
+                <p class="card-text">See wordcloud, hourly, daily statistics</p>
+                <a href="{{ url_for('target') }}" class="btn btn-primary btn-lg btn-dark">Plots</a>
+            </div>
+
+        </div>
+        <div class="card text-center bg-dark" style="font-size:x-large;  align-items: center;">
+            <i class="bi bi-clipboard-data" style="font-size: 5rem; color: cornflowerblue;"></i>
+            <div class="card-body">
+                <p class="card-text">See collected tweets</p>
+                <br>
+                <a href="{{ url_for('tweets_page') }}" class="btn btn-primary btn-lg btn-dark">Tweets</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container" style="font-size:x-large;">
+    <div class="card-deck">
+
+        <div class="card text-center bg-dark" style="font-size:x-large;  align-items: center;">
+            <i class="bi bi-vinyl-fill" style="font-size: 5rem; color: cornflowerblue;"></i>
+            <div class="card-body">
+                <p class="card-text">Investigate correlation between tweets and certain words</p>
+                <a href="{{ url_for('correlation_page') }}" class="btn btn-primary btn-lg btn-dark">Word
+                    Correlations</a>
+            </div>
+
+        </div>
+        <div class="card text-center bg-dark" style="font-size:x-large;  align-items: center;">
+            <i class="bi bi-heart-half" style="font-size: 5rem; color: cornflowerblue;"></i>
+            <div class="card-body">
+                <p class="card-text">Investigate sentiments of collected tweets</p>
+                <br>
+                <a href="{{ url_for('sentiment_page') }}" class="btn btn-primary btn-lg btn-dark">Sentiment Analysis</a>
+            </div>
+
+        </div>
+        <div class="card text-center bg-dark" style="font-size:x-large;  align-items: center;">
+            <i class="bi bi-arrows-angle-contract" style="font-size: 5rem; color: cornflowerblue;"></i>
+            <div class="card-body">
+                <p class="card-text">Co-occurrence: a relation occurs if both keywords are in
+                    the same tweet</p>
+                <a href="{{ url_for('word_cooc_page') }}" class="btn btn-primary btn-lg btn-dark">Word Co-occurence</a>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+<br>
+<div class="container" style="font-size:x-large;">
+    <div class="card-deck">
+        <div class="card text-center bg-dark" style="font-size:x-large;  align-items: center;">
+            <i class="bi bi-person-lines-fill" style="font-size: 5rem; color: cornflowerblue;"></i>
+            <div class="card-body">
+                <p class="card-text">Contact for further information</p>
+                <br>
+                <a href="{{ url_for('contact_page') }}" class="btn btn-primary btn-lg btn-dark">Contact</a>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+<br>
+
+<div class="container" style="font-size:large; ">
+    <br>
+    <h2 class="card-title" style="text-align: center;">Used Machine Learning / Python Libraries</h2>
+    <div class="card-deck">
+
+        <div class="card text-center bg-dark" style="font-size:x-large;  align-items: center;">
+            <img src="./static/tensorflow-icon.svg"
+                style="height: 5rem; width: 5rem; color: cornflowerblue; margin-top: 2em;" alt="Card image cap">
+
+            <div class="card-body">
+                <a href="www.tendorflow.org" class="btn btn-primary btn-lg btn-dark">TensorFlow</a>
+            </div>
+
+        </div>
+        <div class="card text-center bg-dark" style="font-size:x-large;  align-items: center;">
+            <img src="./static/hf_icon.png" style="height: 5rem; width: 5rem; color: cornflowerblue; margin-top: 2em;"
+                alt="Card image cap">
+
+            <div class="card-body">
+                <a href="www.huggingface.co" class="btn btn-primary btn-lg btn-dark">Hugging Face</a>
+            </div>
+
+        </div>
+        <div class="card text-center bg-dark" style="font-size:x-large;  align-items: center;">
+            <img src="./static/Scikit_learn_logo_small.svg"
+                style="height: 5rem; width: 10rem; color: cornflowerblue; margin-top: 2em;" alt="Card image cap">
+
+            <div class="card-body">
+                <a href="https://scikit-learn.org/stable/" class="btn btn-primary btn-lg btn-dark">Scikit Learn</a>
+            </div>
+
+        </div>
+
+
+        <div class="card text-center bg-dark" style="font-size:x-large;  align-items: center;">
+            <img src="./static/flask.png" style="height: 4rem; width: 8rem; color: cornflowerblue; margin-top: 2em;"
+                alt="Card image cap">
+            <br>
+            <div class="card-body">
+                <a href="https://flask.palletsprojects.com/en/2.0.x/" class="btn btn-primary btn-lg btn-dark">Flask</a>
+            </div>
+
+        </div>
+        <div class="card text-center bg-dark" style="font-size:x-large;  align-items: center;">
+            <img src="./static/wc1.jpg" style="height: 4rem; width: 8rem; color: cornflowerblue; margin-top: 2em;"
+                alt="Card image cap">
+            <br>
+            <div class="card-body">
+                <a href="https://pypi.org/project/wordcloud/" class="btn btn-primary btn-lg btn-dark">WordCloud</a>
+            </div>
+
+        </div>
+        <div class="card text-center bg-dark" style="font-size:x-large;  align-items: center;">
+            <img src="./static/sqlalchemy.png"
+                style="height: 4rem; width: 8rem; color: cornflowerblue; margin-top: 2em;" alt="Card image cap">
+            <br>
+            <div class="card-body">
+                <a href="https://www.sqlalchemy.org/" class="btn btn-primary btn-lg btn-dark">SQLAlchemy</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+
+{% endblock %}
+
+
+<!-- <div class="container" style="font-size:x-large;">
+    <br>
+    <h2 class="card-title" style="text-align: center;">Used Machine Learning Libraries</h2>
+    <div class="card-deck">
+        
+        <div class="card bg-dark" style="font-size:x-large; width: 60 rem;">
+            <img class="card-img-top" src="./static/tf.png" alt="Card image cap">
+
+        </div>
+        <div class="card bg-dark" style="font-size:x-large; width: 60 rem;">
+            <img class="card-img-top" src="./static/hf2.jpg" alt="Card image cap">
+
+        </div>
+
+
+    </div>
+</div> -->
+
+<!-- {% if lang: %}
+<h1>{{ search_text }}</h1>
+<h1>{{ startdate }}</h1>
+<h1>{{ enddate }}</h1>
+<h1>{{ lang }}</h1>
+{% endif %}     -->

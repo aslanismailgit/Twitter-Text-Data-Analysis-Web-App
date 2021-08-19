@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block title %}
+Correlation
+{% endblock %}
+
+{% block content %}
+
+{% if form:%}
+<div class="container">
+  <form method="POST" class="form-register" style="color:white">
+      <!-- <img class="mb-4" src="https://res.cloudinary.com/jimshapedcoding/image/upload/v1597332609/android-icon-192x192_ove2a7.png" alt=""> -->
+      {{ form.csrf_token }}
+      <!-- <h1 class="h3 m-3 font-weight-normal">
+          Please Enter Search Criteria
+      </h1> -->
+      <br>
+      <p class="h2">Please Enter Target Words</p>
+      <br>
+      <p class="h3">{{ form.target_words.label() }}</p>
+      {{ form.target_words(class="form-control form-control-lg", placeholder="Enter Target Words") }}
+      <br>
+      <p class="h3">{{ form.word_count2keep.label() }}</p>
+      {{ form.word_count2keep(class="form-control form-control-lg", placeholder="Enter Number of Words to Check Correlation") }}
+      <br>
+      {{ form.submit(class="btn btn-lg btn-primary") }}
+
+  </form>
+  <p>Enter same Criteria to bring up previously created plots</p>
+
+</div>
+{% endif %}
+
+{% if fig: %}
+<div>
+
+  <br>
+  <div class="container">
+    <h2 style="text-align: center;">Correlation with Target Words</h2>
+    <img src='data:image/png;base64,{{fig}}' />
+  </div>
+  <br>
+    <br>
+</div>
+{% endif %}
+
+{% endblock %}
+
+
+<!-- {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+  {% for category, message in messages %}
+  <br>
+  <div class="container alert alert-{{ category }}">
+    <button type="button" class="m1-2 mb-1 close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    {{ message }}
+  </div>
+  {% endfor %}
+  {% endif %}
+  {% endwith %} -->

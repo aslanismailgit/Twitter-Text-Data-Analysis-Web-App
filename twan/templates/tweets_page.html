@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}
+Tweets
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div >
+      <br>
+      <h2>Collected Tweets</h2>
+      <br>
+      <div>
+        <table class="table table-striped" style="color: aliceblue;max-width: 1500px;">
+          <thead>
+            <tr>
+              <th>Index</th>
+              <th>Tweet Date</th>
+              <th>Text</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          {% for i in range(0,(tweets)|length) %}
+          <tr">
+            <td>{{ tweets.index[i] + 1 }}</td>
+            <td>{{ tweets.Datetime[i] }}</td>
+            <td>{{ tweets.Username[i] }}</td>
+            <td>{{ tweets.Text[i] }}</td>
+
+            </tr>
+            {% endfor %}
+        </table>
+      </div>
+    </div>
+
+  
+  
+  </div>
+
+{% endblock %}
+<!-- 
+<td>{{ tweets.memnun[i] }}</td>
+<td>{{ tweets.şikayetçi[i] }}</td>
+<td>{{ tweets.kargo[i] }}</td>
+<td>{{ tweets.ürün[i] }}</td> -->

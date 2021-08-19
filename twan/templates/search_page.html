@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}
+Search
+{% endblock %}
+
+{% block content %}
+<body class="text-center">
+    <div class="container">
+        <form method="POST" class="form-register" style="color:white">
+            <!-- <img class="mb-4" src="https://res.cloudinary.com/jimshapedcoding/image/upload/v1597332609/android-icon-192x192_ove2a7.png" alt=""> -->
+            {{ form.csrf_token }}
+            <!-- <h1 class="h3 m-1 font-weight-normal">
+                Please Enter Search Criteria
+            </h1> -->
+            <br>
+            <p class="h2">Please Enter Search Criteria</p>
+            <br>
+            <p class="h3 m-1">{{ form.search_text.label() }}</p>
+            {{ form.search_text(class="form-control form-control-lg m-1", placeholder="Enter Search Text Here") }}
+            
+            <p class="h3 m-1">{{ form.startdate.label() }}</p>
+            {{ form.startdate(class="form-control form-control-lg m-1", type="date",placeholder="Start Date") }}
+            
+            <p class="h3 m-1">{{ form.enddate.label() }}</p>
+            {{ form.enddate(class="form-control form-control-lg m-1", type="date", placeholder="End Date") }}
+            
+            <p class="h3 m-1">{{ form.lang.label() }}</p>
+            {{ form.lang(class="form-control form-control-lg m-1", placeholder="Language") }}
+            
+            <p class="h3 m-1">{{ form.max_tweets.label() }}</p>
+            {{ form.max_tweets(class="form-control form-control-lg m-1", placeholder="Maximum Tweet Count") }}
+            
+            {{ form.submit(class="btn btn-lg btn-primary") }}
+
+        </form>
+
+    </div>
+</body>
+
+{% endblock %}
+
+
+<!-- {% if lang: %}
+<h1>{{ search_text }}</h1>
+<h1>{{ startdate }}</h1>
+<h1>{{ enddate }}</h1>
+<h1>{{ lang }}</h1>
+{% endif %}     -->

@@ -1,0 +1,11 @@
+tw_enw
+__pycache__/*
+tw_env/*
+twan/tf_model/*
+twan/transformers/*
+twan/transformers_tr/*
+twan/data/*
+practical*
+twan/__pycache__/*
+directions.txt
+twan/database/*

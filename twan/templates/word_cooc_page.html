@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %}
+Word Co-occurance Analysis
+{% endblock %}
+
+{% block content %}
+
+{% if form:%}
+<div class="container">
+  <form method="POST" class="form-register" style="color:white">
+      {{ form.csrf_token }}
+      <br>
+      <p class="h2">Word co-occurence in the same tweet</p>
+      <p>Co-occurrence: a relation occurs if both keywords are in
+        the same tweet </p>
+      <br>
+      <p class="h3 m-1">{{ form.top_n_words.label() }}</p>
+      {{ form.top_n_words(class="form-control form-control-lg m-1", placeholder="Number of words to analyse") }}
+      
+      {{ form.submit(class="btn btn-lg btn-primary mt-3 m-1") }}
+
+  </form>
+
+</div>
+{% endif %}
+
+{% if fig: %}
+<div>
+
+  <br>
+  <div class="container">
+    <h2 style="text-align: center;">Word Co-occurance Analysis</h2>
+
+    <img src='data:image/png;base64,{{fig}}' />
+  </div>
+  <br>
+    <br>
+</div>
+{% endif %}
+
+{% endblock %}
+
+
+<!-- {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+  {% for category, message in messages %}
+  <br>
+  <div class="container alert alert-{{ category }}">
+    <button type="button" class="m1-2 mb-1 close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    {{ message }}
+  </div>
+  {% endfor %}
+  {% endif %}
+  {% endwith %} -->

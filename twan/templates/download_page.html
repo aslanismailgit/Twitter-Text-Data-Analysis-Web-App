@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block title %}
+Download
+{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<br>
+<body class="text-center">
+    <div class="container">
+        <form method="POST" class="form-register" style="color:white">
+            {{ form.csrf_token }}
+
+            <br>
+            <p class="h2">Download link will be sent to your email</p>
+            <br>
+            <p class="h3">{{ form.email.label() }}</p>
+            {{ form.email(class="form-control form-control-lg", placeholder="Enter Your Email Here") }}
+            <br>
+            {{ form.submit(class="btn btn-lg btn-primary") }}
+
+        </form>
+
+    </div>
+    <div class="container">
+
+        {% if download_link: %}
+        <br>
+
+        <p class="h2">Download link has been sent to your email</p>
+        <p> Check your spam folder in case you can't find it in your inbox!</p>
+
+            <h1>{{download_link}}</h1>
+            <br>
+            <a href={{download_link}}>Download Link</a><br>
+        {% endif %}
+
+    </div>
+</body>
+
+{% endblock %}
+
+
+<!-- {% if lang: %}
+<h1>{{ search_text }}</h1>
+<h1>{{ startdate }}</h1>
+<h1>{{ enddate }}</h1>
+<h1>{{ lang }}</h1>
+{% endif %}     -->
