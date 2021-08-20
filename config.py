@@ -11,8 +11,8 @@ class Config(object):
     SECRET_KEY = 'ec9439cfc6c796ae2029594d'
     MAIL_SERVER='smtp.gmail.com'
     MAIL_PORT = 465
-    MAIL_USERNAME = 'twittranalysis@gmail.com'
-    MAIL_PASSWORD = '1234.qwer.'
+    MAIL_USERNAME = <your_mail_address>
+    MAIL_PASSWORD = <your_mail_password>
     MAIL_USE_TLS = False
     MAIL_USE_SSL = True
 
