@@ -1,7 +1,7 @@
 tw_env/*
 __pycache__
 twan/__pycache__
-.vscode/*
+.vscode
 
 twan/data/*
 !twan/data/temp.txt
