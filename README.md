@@ -20,25 +20,25 @@ Main functionalities are:
 
 Some screenshot!
 
-![alt text](https://github.com/aslanismailgit/Twitter-Text-Data-Analysis-Web-App/blob/master/images/main.png)
+![alt text](https://github.com/aslanismailgit/Twitter-Text-Data-Analysis-Web-App/blob/main/images/main.png)
 
-![alt text](https://github.com/aslanismailgit/Twitter-Text-Data-Analysis-Web-App/blob/master/images/search_page.png)
+![alt text](https://github.com/aslanismailgit/Twitter-Text-Data-Analysis-Web-App/blob/main/images/search_page.png)
 
-![alt text](https://github.com/aslanismailgit/Twitter-Text-Data-Analysis-Web-App/blob/master/images/plots1.png)
+![alt text](https://github.com/aslanismailgit/Twitter-Text-Data-Analysis-Web-App/blob/main/images/plots1.png)
 
-![alt text](https://github.com/aslanismailgit/Twitter-Text-Data-Analysis-Web-App/blob/master/images/plots2.png)
+![alt text](https://github.com/aslanismailgit/Twitter-Text-Data-Analysis-Web-App/blob/main/images/plots2.png)
 
-![alt text](https://github.com/aslanismailgit/Twitter-Text-Data-Analysis-Web-App/blob/master/images/plots3.png)
+![alt text](https://github.com/aslanismailgit/Twitter-Text-Data-Analysis-Web-App/blob/main/images/plots3.png)
 
-![alt text](https://github.com/aslanismailgit/Twitter-Text-Data-Analysis-Web-App/blob/master/images/enter_target_words.png)
+![alt text](https://github.com/aslanismailgit/Twitter-Text-Data-Analysis-Web-App/blob/main/images/enter_target_words.png)
 
-![alt text](https://github.com/aslanismailgit/Twitter-Text-Data-Analysis-Web-App/blob/master/images/correlation_plot.png)
+![alt text](https://github.com/aslanismailgit/Twitter-Text-Data-Analysis-Web-App/blob/main/images/correlation_plot.png)
 
-![alt text](https://github.com/aslanismailgit/Twitter-Text-Data-Analysis-Web-App/blob/master/images/sentiment_analysis_plot.png)
+![alt text](https://github.com/aslanismailgit/Twitter-Text-Data-Analysis-Web-App/blob/main/images/sentiment_analysis_plot.png)
 
-![alt text](https://github.com/aslanismailgit/Twitter-Text-Data-Analysis-Web-App/blob/master/images/word_cooccurance.png)
+![alt text](https://github.com/aslanismailgit/Twitter-Text-Data-Analysis-Web-App/blob/main/images/word_cooccurance.png)
 
-![alt text](https://github.com/aslanismailgit/Twitter-Text-Data-Analysis-Web-App/blob/master/images/download.png)
+![alt text](https://github.com/aslanismailgit/Twitter-Text-Data-Analysis-Web-App/blob/main/images/download.png)
 
 
 ## Happy machine learning!
