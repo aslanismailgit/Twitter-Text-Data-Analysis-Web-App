@@ -25,7 +25,8 @@ twan/transformers_tr/tf_model*
 twan/transformers_tr/token*
 twan/transformers_tr/vocab*
 
-
 practical*
-directions.txt
+mongo_gcp_ai_platform
+ENV*
+
 

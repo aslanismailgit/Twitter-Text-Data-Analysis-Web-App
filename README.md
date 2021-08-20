@@ -1,12 +1,12 @@
 
 # Twitter Text Data Analysis Web App
 
-This app is designed to analyze twitter text data.
-Runnign on Flask with libraries:
+This app is designed to analyze twitter text data using different NLP techniques.
+Running on Flask with libraries:
  - TensorFlow
  - HuggingFace
  - SQLAlchemy
- - Sckit-Learn
+ - Scikit-Learn
  - Wordcloud 
  - Pandas 
  - Flask-Mail etc.  
@@ -15,8 +15,8 @@ Main functionalities are:
  - Collect tweets based on keyword, date range, language
  - Compute correlation scores between top n frequent words and the target words in the daily tweet corpus using TensorFlow Universal Sentence Encoder
  - Sentiment analysis using HuggingFace transformers
- - Display word co-occurance in daily tweet corpus
- - Dowload analysis results, collected tweets
+ - Display word co-occurrence in daily tweet corpus
+ - Download analysis results, collected tweets
 
 Some screenshot!
 
