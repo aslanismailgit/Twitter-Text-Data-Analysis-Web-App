@@ -13,7 +13,7 @@ Runnign on Flask with libraries:
 
 Main functionalities are:
  - Collect tweets based on keyword, date range, language
- - Compute correlation scores between top n frequent words in the daily tweet corpus using TensorFlow Universal Sentence Encoder
+ - Compute correlation scores between top n frequent words and the target words in the daily tweet corpus using TensorFlow Universal Sentence Encoder
  - Sentiment analysis using HuggingFace transformers
  - Display word co-occurance in daily tweet corpus
  - Dowload analysis results, collected tweets

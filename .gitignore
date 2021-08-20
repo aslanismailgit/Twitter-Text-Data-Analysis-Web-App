@@ -1,6 +1,13 @@
 tw_env/*
 __pycache__
 twan/__pycache__
+.vscode
+
+twan/data/*
+!twan/data/temp.txt
+
+twan/database/*
+!twan/database/db_*
 
 twan/tf_model/assets
 twan/tf_model/variables
@@ -18,7 +25,7 @@ twan/transformers_tr/tf_model*
 twan/transformers_tr/token*
 twan/transformers_tr/vocab*
 
-twan/data/*
+
 practical*
 directions.txt
-twan/database/*
+
